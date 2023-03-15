@@ -6,9 +6,10 @@ using Zenject;
 public class GameConfigInstaller : ScriptableObjectInstaller<GameConfigInstaller>
 {
     [SerializeField] private GameSettings gameSettings;
+    [SerializeField] private CardsConfig cardsConfig;
 
     public override void InstallBindings()
     {
-        Container.BindInstances(gameSettings);
+        Container.BindInstances(gameSettings, cardsConfig);
     }
 }

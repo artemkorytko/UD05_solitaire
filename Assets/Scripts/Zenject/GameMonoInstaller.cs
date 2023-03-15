@@ -9,9 +9,8 @@ public class GameMonoInstaller : MonoInstaller
     public override void InstallBindings()
     {
         SignalInstaller.Install(Container);
-        Container.BindInterfacesAndSelfTo<GameController>().AsSingle().NonLazy();
+        
         Container.BindInterfacesAndSelfTo<PlayerController>().AsSingle().NonLazy();
-
-        Container.BindFactory<PlayingCard, PlayingCard.Factory>().FromComponentInNewPrefab(_gameSettings.PlayingCardPrefab);
+        Container.BindFactory<CardData, PlayingCard, PlayingCard.Factory>().FromComponentInNewPrefab(_gameSettings.PlayingCardPrefab);
     }
 }

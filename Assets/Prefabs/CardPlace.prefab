@@ -142,3 +142,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 150b2b66b8f0c42c2815c0a6a969737f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isMain: 0
+  _cardContainer: {fileID: 4078949561758934531}
