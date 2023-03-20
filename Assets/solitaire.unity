@@ -411,6 +411,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1459046840}
     m_Modifications:
+    - target: {fileID: 3448359492507380279, guid: 2f21bec7f30c7d744a280a41c7e1980a, type: 3}
+      propertyPath: isMain
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6693041384023231204, guid: 2f21bec7f30c7d744a280a41c7e1980a, type: 3}
       propertyPath: m_Name
       value: Black_PlayingCards_Blank_00 (4)
@@ -478,6 +482,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7690226722388015351, guid: 2f21bec7f30c7d744a280a41c7e1980a, type: 3}
   m_PrefabInstance: {fileID: 975099672}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &457937867 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3448359492507380279, guid: 2f21bec7f30c7d744a280a41c7e1980a, type: 3}
+  m_PrefabInstance: {fileID: 975099672}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7129a6960993d4a4aa716516dd14e821, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &474246389 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3448359492507380279, guid: 2f21bec7f30c7d744a280a41c7e1980a, type: 3}
+  m_PrefabInstance: {fileID: 1963985232}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7129a6960993d4a4aa716516dd14e821, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &639973886
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -627,6 +653,7 @@ GameObject:
   - component: {fileID: 1010802512}
   - component: {fileID: 1010802511}
   - component: {fileID: 1010802510}
+  - component: {fileID: 1010802513}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -700,6 +727,35 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1010802513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1010802509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0166d8ff8d905b048b2448179e1f5d11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _components:
+  - {fileID: 1010802511}
+  _identifier: 
+  _useSceneContext: 1
+  _context: {fileID: 0}
+  _bindType: 0
+--- !u!114 &1013777908 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3448359492507380279, guid: 2f21bec7f30c7d744a280a41c7e1980a, type: 3}
+  m_PrefabInstance: {fileID: 345878923}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7129a6960993d4a4aa716516dd14e821, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1102573417
 GameObject:
   m_ObjectHideFlags: 0
@@ -709,6 +765,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1102573418}
+  - component: {fileID: 1102573419}
   m_Layer: 0
   m_Name: Game
   m_TagString: Untagged
@@ -732,6 +789,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1102573419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1102573417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3dff4113d6b43289590d92e85918acf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardPlaces:
+  - {fileID: 2117938199}
+  - {fileID: 1501452819}
+  - {fileID: 1013777908}
+  - {fileID: 1940532298}
+  - {fileID: 457937867}
+  - {fileID: 1351507958}
+  - {fileID: 474246389}
 --- !u!1001 &1178923649
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -904,6 +981,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7690226722388015351, guid: 2f21bec7f30c7d744a280a41c7e1980a, type: 3}
   m_PrefabInstance: {fileID: 419171910}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1351507958 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3448359492507380279, guid: 2f21bec7f30c7d744a280a41c7e1980a, type: 3}
+  m_PrefabInstance: {fileID: 1527591142}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7129a6960993d4a4aa716516dd14e821, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1380109595
 GameObject:
   m_ObjectHideFlags: 0
@@ -987,6 +1075,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7690226722388015351, guid: 2f21bec7f30c7d744a280a41c7e1980a, type: 3}
   m_PrefabInstance: {fileID: 639973886}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1501452819 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3448359492507380279, guid: 2f21bec7f30c7d744a280a41c7e1980a, type: 3}
+  m_PrefabInstance: {fileID: 639973886}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7129a6960993d4a4aa716516dd14e821, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1526918212 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7690226722388015351, guid: 2f21bec7f30c7d744a280a41c7e1980a, type: 3}
@@ -1068,6 +1167,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1459046840}
     m_Modifications:
+    - target: {fileID: 3448359492507380279, guid: 2f21bec7f30c7d744a280a41c7e1980a, type: 3}
+      propertyPath: isMain
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6693041384023231204, guid: 2f21bec7f30c7d744a280a41c7e1980a, type: 3}
       propertyPath: m_Name
       value: Black_PlayingCards_Blank_00 (3)
@@ -1280,6 +1383,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1459046840}
     m_Modifications:
+    - target: {fileID: 3448359492507380279, guid: 2f21bec7f30c7d744a280a41c7e1980a, type: 3}
+      propertyPath: isMain
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6693041384023231204, guid: 2f21bec7f30c7d744a280a41c7e1980a, type: 3}
       propertyPath: m_Name
       value: Black_PlayingCards_Blank_00 (2)
@@ -1441,6 +1548,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7690226722388015351, guid: 2f21bec7f30c7d744a280a41c7e1980a, type: 3}
   m_PrefabInstance: {fileID: 1639083620}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1940532298 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3448359492507380279, guid: 2f21bec7f30c7d744a280a41c7e1980a, type: 3}
+  m_PrefabInstance: {fileID: 1639083620}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7129a6960993d4a4aa716516dd14e821, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1963985232
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1517,6 +1635,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1459046840}
     m_Modifications:
+    - target: {fileID: 3448359492507380279, guid: 2f21bec7f30c7d744a280a41c7e1980a, type: 3}
+      propertyPath: isMain
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6693041384023231204, guid: 2f21bec7f30c7d744a280a41c7e1980a, type: 3}
       propertyPath: m_Name
       value: Black_PlayingCards_Blank_00 (1)
@@ -1612,3 +1734,14 @@ Transform:
   m_Father: {fileID: 171517660}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2117938199 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3448359492507380279, guid: 2f21bec7f30c7d744a280a41c7e1980a, type: 3}
+  m_PrefabInstance: {fileID: 1791986741}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7129a6960993d4a4aa716516dd14e821, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

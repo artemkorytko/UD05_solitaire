@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: GameConfigInstaller
   m_EditorClassIdentifier: 
   gameSettings: {fileID: 11400000, guid: fe457a7495c651441b6148c55e38e957, type: 2}
+  cardsConfig: {fileID: 11400000, guid: 7ec625232387d304b920dd32dcad67bf, type: 2}

@@ -1,25 +1,46 @@
 ﻿using System;
+using UnityEngine;
 using Zenject;
 
 namespace Solitaire
 {
-    public class GameController : IInitializable, IDisposable
+    public class GameController : MonoBehaviour
     {
-        private readonly PlayingCard.Factory _factory;
+        [SerializeField] private CardPlace[] cardPlaces;
 
-        public GameController(PlayingCard.Factory factory)
+        private CardDeck _cardDeck;
+
+        [Inject]
+        private void Construct(CardDeck cardDeck)
         {
-            _factory = factory;
-        }
-        
-        public void Initialize()
-        {
-            _factory.Create();
+            _cardDeck = cardDeck;
         }
 
-        public void Dispose()
+        private void Start()
         {
-            
+            FillGamePlaces();
+        }
+
+        private void FillGamePlaces()
+        {
+            for (int i = 0; i < cardPlaces.Length; i++)
+            {
+                int counter = i;
+                var cardPlace = cardPlaces[i];
+                PlayingCard card = null;
+
+                while (counter > 0)
+                {
+                    card = _cardDeck.GetCard();
+                    card.SetParent(cardPlace);
+                    cardPlace = card;
+                    counter--;
+                }
+
+                card = _cardDeck.GetCard();
+                card.SetParent(cardPlace);
+                card.Open();
+            }
         }
     }
 }

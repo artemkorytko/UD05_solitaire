@@ -1,4 +1,4 @@
-using Solitaire;
+ using Solitaire;
 using Zenject;
 
 public class GameMonoInstaller : MonoInstaller
@@ -8,10 +8,9 @@ public class GameMonoInstaller : MonoInstaller
     public override void InstallBindings()
     {
         SignalInstaller.Install(Container);
-        Container.BindInterfacesAndSelfTo<GameController>().AsSingle().NonLazy();
+        
         Container.BindInterfacesAndSelfTo<PlayerController>().AsSingle().NonLazy();
-
-        Container.BindFactory<PlayingCard, PlayingCard.Factory>()
+        Container.BindFactory<CardData, PlayingCard, PlayingCard.Factory>()
             .FromComponentInNewPrefab(_gameSettings.PlayingCardPrefab);
     }
 }

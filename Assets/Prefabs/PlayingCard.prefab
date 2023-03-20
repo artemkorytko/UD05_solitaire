@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2109526006184258167}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: OpenCardContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 2566884365652655316}
   - component: {fileID: 46408992282848237}
   - component: {fileID: 9020684436878114059}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PlayingCard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -143,6 +143,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fc5b8c26d2780f409cc12201bbf113e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isMain: 0
+  _cardContainer: {fileID: 0}
+  openCardContainer: {fileID: 2109526006184258167}
+  closeCardContainer: {fileID: 8213820458769582767}
 --- !u!1 &6475331063157247767
 GameObject:
   m_ObjectHideFlags: 0
@@ -152,7 +156,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8213820458769582767}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CloseCardContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
