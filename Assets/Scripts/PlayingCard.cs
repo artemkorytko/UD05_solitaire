@@ -100,4 +100,12 @@ public class PlayingCard : CardPlace
 
         this.isMain = isMain;
     }
+
+    public void Reset()
+    {
+        SetParent();
+        SetAtMain(false);
+        Close();
+        _parent = null;
+    }
 }
